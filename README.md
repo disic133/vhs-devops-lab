@@ -1,7 +1,7 @@
 # TRUE NORTH engineering
 # Donis Isic
 
-##Project description
+## Project description
 
 This project describes a task of building a container for the Nexus server using Podman runtime.
 Binaries for the Nexus server were provided in the project task.
