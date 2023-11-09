@@ -5,7 +5,7 @@
 
 This project describes a task of building a container for the Nexus server using Podman runtime.
 Binaries for the Nexus server were provided in the project task.
-The container is built using the UBI8.7 base image and is designed to facilitate the deployment and usage of the Nexus server within a containerized environment.
+The container is built using the UBI 8.7 base image and is designed to facilitate the deployment and usage of the Nexus server within a containerized environment.
 
 ## Features
 
@@ -21,13 +21,14 @@ The container is built using the UBI8.7 base image and is designed to facilitate
 
 ## Usage instructions
 
-It is required to have the provided Dockerfile, scripts, and Nexus binaries archive in the same directory.
+It is required to have the provided Dockerfile and scripts in the same directory.
 If the user is not root, run the scripts using sudo command
 
 ## Building the Container Image
 
 To build the Nexus container image, run the provided "ShScript1.sh" script.
-The script uses the provided Dockerfile and builds the container image for the Nexus server.
+The script downloads Nexus binaries, then uses the provided Dockerfile and builds the container image for the Nexus server.
+After the process binaries are deleted because they are not needed from that point on.
 
 ## Running the container
 

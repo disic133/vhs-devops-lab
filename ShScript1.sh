@@ -1,5 +1,7 @@
 #!/bin/bash
 
+wget https://download.sonatype.com/nexus/3/nexus-3.37.3-02-unix.tar.gz
+
 #Install Podman
 yum install podman -y
 
@@ -18,3 +20,5 @@ if [ $? -eq 0 ]; then
 else
     echo "Error: Failed to build the Nexus server Podman image."
 fi
+
+rm nexus-3.37.3-02-unix.tar.gz
